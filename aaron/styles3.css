@@ -1,0 +1,271 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografía elegante */
+    background-color: #2b2d42; /* Fondo gris oscuro */
+    color: #edf2f4; /* Texto claro */
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Cabecera */
+header {
+    background: linear-gradient(to right, #1f2233, #394053); /* Gradiente oscuro */
+    color: #f8f9fa;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #4a4e69; /* Línea divisoria sutil */
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #d4af37; /* Acento dorado */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-out;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+nav li {
+    margin: 0 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f9fa;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #d4af37; /* Acento dorado */
+    color: #1f2233; /* Fondo oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Sección General */
+main {
+    padding: 3rem 5%;
+    background-color: #20212a; /* Fondo principal oscuro */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin: 2rem 0;
+}
+
+/* Sección de coches */
+.coches h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #d4af37;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #394053; /* Línea decorativa */
+    padding-bottom: 0.5rem;
+}
+
+.coches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.coche {
+    background: #394053; /* Fondo gris acero */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.coche:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.coche img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    border: 4px solid #d4af37;
+    transition: all 0.3s ease-in-out;
+}
+
+.coche img:hover {
+    filter: brightness(1.2); /* Brillo al pasar el ratón */
+}
+
+.coche h3 {
+    color: #edf2f4;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.coche p {
+    color: #8d99ae; /* Gris claro */
+    font-size: 1rem;
+}
+
+/* Sección de marcas */
+.marcas {
+    background-color: #20212a;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-top: 2.5rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.marcas h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #d4af37;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.marcas ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.marcas li {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    background: #394053;
+    color: #edf2f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.marcas li:hover {
+    background: #d4af37;
+    color: #20212a;
+    transform: scale(1.1);
+}
+
+/* Sección sobre nosotros */
+.sobre-nosotros {
+    background-color: #1f2233;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sobre-nosotros h2 {
+    font-size: 2.2rem;
+    color: #d4af37;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.sobre-nosotros p {
+    font-size: 1.2rem;
+    color: #8d99ae;
+    line-height: 1.8;
+}
+
+/* Formulario de contacto */
+.contacto {
+    background-color: #394053;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contacto h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    font-size: 1.1rem;
+    padding: 1rem;
+    border: 1px solid #8d99ae;
+    border-radius: 10px;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+button {
+    background: #d4af37;
+    color: #1f2233;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #b68d2a;
+}
+
+/* Pie de página */
+footer {
+    background: #1f2233;
+    color: #8d99ae;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    border-top: 1px solid #394053;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
