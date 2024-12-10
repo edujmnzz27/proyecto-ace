@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explora nuestra colección de coches destacados, incluyendo marcas como Mercedes, BMW y más. Descubre información detallada y contáctanos para saber más.">
-    <title>Coches Destacados</title>
+    <title>Car2Go</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
+
+
+
 <body>
     <!-- Cabecera -->
     <header>
-        <h1>Coches Destacados</h1>
+        <h1>Car2Go</h1>
         <nav>
             <ul>
                 <li><a href="#coches">Coches</a></li>
@@ -24,32 +26,76 @@
     </header>
 
     <!-- Contenido Principal -->
+
+
+    <section id="filtro-vehiculos" class="filtro-vehiculos">
+        <h2>Encuentra tu Vehículo Ideal</h2>
+        <form>
+            <label for="modelo">Modelo del Vehículo:</label>
+            <select id="modelo" name="modelo" required>
+                <option value="" disabled selected>Seleccione un modelo</option>
+                <option value="mercedes-benz-clase-s">Mercedes-Benz Clase S</option>
+                <option value="bmw-serie-5">BMW Serie 5</option>
+                <option value="audi-a6">Audi A6</option>
+                <option value="tesla-model-s">Tesla Model S</option>
+                <option value="porsche-911">Porsche 911</option>
+            </select>
+    
+            <label for="kilometros">Kilómetros Máximos:</label>
+            <input type="number" id="kilometros" name="kilometros" required placeholder="Ejemplo: 50000">
+    
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+    
+            <label for="direccion">Tu Dirección:</label>
+            <textarea id="direccion" name="direccion" required placeholder="Escribe tu dirección aquí"></textarea>
+    
+            <button type="submit">Buscar Vehículo</button>
+        </form>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+    
     <main>
         <!-- Sección de Coches -->
         <section id="coches" class="coches">
             <h2>Nuestros Coches Destacados</h2>
             <article class="coche">
                 <img src="clases.jpg" alt="Mercedes-Benz Clase S">
+                <p class="precio">Precio Alquiler: 80€/Dia</p>
                 <h3>Mercedes-Benz Clase S</h3>
                 <p>Lujo y confort en su máxima expresión. Equipado con tecnología avanzada y un diseño icónico.</p>
             </article>
             <article class="coche">
                 <img src="descarga.jpg" alt="BMW Serie 5">
+                <p class="precio">Precio Alquiler: 50€/Dia</p>
                 <h3>BMW Serie 5</h3>
                 <p>El equilibrio perfecto entre rendimiento, elegancia y potencia.</p>
             </article>
             <article class="coche">
                 <img src="audia6.jpg" alt="Audi A6">
+                <p class="precio">Precio Alquiler: 60€/Dia</p>
                 <h3>Audi A6</h3>
                 <p>Innovación y diseño en cada detalle. El coche ideal para quienes buscan sofisticación.</p>
             </article>
             <article class="coche">
                 <img src="teslass.jpg" alt="Tesla Model S">
+                <p class="precio">Precio Alquiler: 90€/Dia</p>
                 <h3>Tesla Model S</h3>
                 <p>El futuro de la conducción eléctrica. Rápido, eficiente y con una autonomía impresionante.</p>
             </article>
             <article class="coche">
                 <img src="porche911.jpg" alt="Porsche 911">
+                <p class="precio">Precio Alquiler: 70€/Dia</p>
                 <h3>Porsche 911</h3>
                 <p>Deportivo icónico con un legado de excelencia. Rendimiento puro y diseño clásico.</p>
             </article>
@@ -93,7 +139,7 @@
 
     <!-- Pie de Página -->
     <footer>
-        <p>&copy; 2024 Coches Destacados. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Car2Go. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>

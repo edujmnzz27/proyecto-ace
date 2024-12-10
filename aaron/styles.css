@@ -269,3 +269,97 @@ footer {
         opacity: 1;
     }
 }
+
+.precio {
+    font-size: 1.2rem;
+    color: #d4af37; /* Dorado para destacar */
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+.filtro-vehiculos {
+    background-image: url('mercedesamg.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Que ocupe todo el espacio */
+    background-position: center; /* Centrar la imagen */
+    color: #edf2f4;
+    padding: 6rem 2rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    position: relative;
+    overflow: hidden;
+}
+
+.filtro-vehiculos:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Oscurecimiento para mejorar la legibilidad */
+    z-index: 1;
+}
+
+.filtro-vehiculos h2, 
+.filtro-vehiculos form {
+    position: relative;
+    z-index: 2;
+}
+
+.filtro-vehiculos h2 {
+    font-size: 2.5rem;
+    color: #d4af37; /* Acento dorado */
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* Resaltar texto */
+}
+
+.filtro-vehiculos form {
+    display: grid;
+    gap: 1.5rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.filtro-vehiculos label {
+    font-size: 1rem;
+    color: #edf2f4;
+}
+
+.filtro-vehiculos input, 
+.filtro-vehiculos select, 
+.filtro-vehiculos textarea {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #8d99ae;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    color: #edf2f4;
+    transition: all 0.3s ease-in-out;
+}
+
+.filtro-vehiculos input:focus, 
+.filtro-vehiculos select:focus, 
+.filtro-vehiculos textarea:focus {
+    border-color: #d4af37;
+    outline: none;
+}
+
+.filtro-vehiculos button {
+    background-color: #d4af37;
+    color: #1f2233;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    text-align: center;
+}
+
+.filtro-vehiculos button:hover {
+    background-color: #b68d2a;
+}
