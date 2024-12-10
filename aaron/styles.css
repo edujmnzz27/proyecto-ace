@@ -277,7 +277,7 @@ footer {
     margin-top: 0.5rem;
 }
 .filtro-vehiculos {
-    background-image: url('mercedesamg.jpg'); /* Imagen de fondo */
+    background-image: url('portada.jpg'); /* Imagen de fondo */
     background-size: cover; /* Que ocupe todo el espacio */
     background-position: center; /* Centrar la imagen */
     color: #edf2f4;
