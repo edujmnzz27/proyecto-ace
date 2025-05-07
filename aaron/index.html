@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explora nuestra colección de coches destacados, incluyendo marcas como Mercedes, BMW y más. Descubre información detallada y contáctanos para saber más.">
     <title>Car2Go</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
@@ -21,42 +21,12 @@
                 <li><a href="#marcas">Marcas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="lista.php">Vehiculos Disponibles</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenido Principal -->
-
-
-    <section id="filtro-vehiculos" class="filtro-vehiculos">
-        <h2>Encuentra tu Vehículo Ideal</h2>
-        <form>
-            <label for="modelo">Modelo del Vehículo:</label>
-            <select id="modelo" name="modelo" required>
-                <option value="" disabled selected>Seleccione un modelo</option>
-                <option value="mercedes-benz-clase-s">Mercedes-Benz Clase S</option>
-                <option value="bmw-serie-5">BMW Serie 5</option>
-                <option value="audi-a6">Audi A6</option>
-                <option value="tesla-model-s">Tesla Model S</option>
-                <option value="porsche-911">Porsche 911</option>
-            </select>
-    
-            <label for="kilometros">Kilómetros Máximos:</label>
-            <input type="number" id="kilometros" name="kilometros" required placeholder="Ejemplo: 50000">
-    
-            <label for="nombre">Tu Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
-    
-            <label for="direccion">Tu Dirección:</label>
-            <textarea id="direccion" name="direccion" required placeholder="Escribe tu dirección aquí"></textarea>
-    
-            <button type="submit">Buscar Vehículo</button>
-        </form>
-    </section>
-    
-
-
-
 
 
 
@@ -137,6 +107,7 @@
         </section>
     </main>
 
+    
     <!-- Pie de Página -->
     <footer>
         <p>&copy; 2024 Car2Go. Todos los derechos reservados.</p>
