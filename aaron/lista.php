@@ -53,15 +53,15 @@
     if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
     echo " <tr>
-    <td>{$row['Matrícula']}</td>
-    <td>{$row['Modelo']}</td>
-    <td>{$row['Combustiblel']}</td>
-    <td>{$row['Motor']}</td>
-    <td>{$row['Plazas']}</td>
-    <td>{$row['Maleta']}</td>
-    <td>{$row['Foto']}</td>
-    <td>{$row['Cód. Gama']}</td>
-    <td>{$row['Coste']}</td>
+    <td>{$row['matricula']}</td>
+    <td>{$row['modelo']}</td>
+    <td>{$row['combustible']}</td>
+    <td>{$row['motor']}</td>
+    <td>{$row['plazas']}</td>
+    <td>{$row['maletas']}</td>
+    <td>{$row['foto']}</td>
+    <td>{$row['codgama']}</td>
+    <td>{$row['coste']}</td>
     </tr>";
     }
     } 
