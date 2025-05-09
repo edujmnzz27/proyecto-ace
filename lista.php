@@ -7,7 +7,7 @@
  error_reporting(E_ALL);
  // Conectar a la base de datos
  // Cambiar el servername por el que proceda: localhost, IP, url, …
- $servername = "mysql";
+ $servername = "127.0.0.1";
  $username = "asirweb";
  $password = "qwe_123";
  $dbname = "proyecto";
@@ -27,25 +27,6 @@
 
   <h1>Información de Vehículos</h1>
 
-<?php
-// Consultar los datos
-$sql = "SELECT * FROM clientes";
-$result = $conn->query($sql);
-if ($result === false) {
-die("Error en la consulta: " . $conn->error);
-}
-if ($result->num_rows > 0) {
-while($row = $result->fetch_assoc()) {
-echo " <tr>
-<td>{$row['razon_social']}</td>
-<td>{$row['descripcion']}</td>
-<td>{$row['email']}</td>
-<td>{$row['telefono']}</td>
-</tr>";
-}
-}
-?>
-
   <table>
     <thead>
       <tr>
@@ -61,6 +42,30 @@ echo " <tr>
       </tr>
     </thead>
     <tbody>
+
+    <?php
+    // Consultar los datos
+    $sql = "SELECT * FROM coche";
+    $result = $conn->query($sql);
+    if ($result === false) {
+    die("Error en la consulta: " . $conn->error);
+    }
+    if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+    echo " <tr>
+    <td>{$row['matricula']}</td>
+    <td>{$row['modelo']}</td>
+    <td>{$row['combustible']}</td>
+    <td>{$row['motor']}</td>
+    <td>{$row['plazas']}</td>
+    <td>{$row['maletas']}</td>
+    <td>{$row['foto']}</td>
+    <td>{$row['codgama']}</td>
+    <td>{$row['coste']}</td>
+    </tr>";
+    }
+    } 
+    ?>
       <tr>
         <td></td>
         <td></td>
